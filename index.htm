@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- Camera is a Pixedelic free jQuery slideshow | Manuel Masia (designer and developer) --> 
+<html lang="es"> 
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" > 
+    <title>VECTOR</title> 
+    <meta name="description" content=""> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'> 
+    <link rel='stylesheet'  href='css/estilos.css' type='text/css' media='all'> 
+    <link rel='stylesheet'  href='css/bootstrap.css' type='text/css' media='all'> 
+
+
+ 
+    
+    <script type='text/javascript' src='scripts/jquery.min.js'></script>
+    <script type='text/javascript' src='scripts/jquery.mobile.customized.min.js'></script>
+    <script type='text/javascript' src='scripts/bootstrap.js'></script>
+    <script type='text/javascript' src='scripts/jquery.easing.1.3.js'></script> 
+    <script type='text/javascript' src='scripts/camera.min.js'></script> 
+    
+    <script>
+		jQuery(function(){
+			
+			jQuery('#camera_wrap_4').camera({
+				height: 'auto',
+				loader: 'bar',
+				pagination: false,
+				thumbnails: false,
+				hover: false,
+				opacityOnGrid: false,
+				imagePath: 'img/'
+			});
+
+		});
+	</script>
+ 
+</head>
+<body>
+    <header>
+	<div id="tira_superior">
+    	<div id="logotipo"><img src="img/logvec.png"></div>
+    	<div id="titulo">	<h1>Viejo Cochino.com</h1> </div>
+        <a href="" data-toggle="modal" data-target=".modal_login" ><div id="inicio_sesion" class="redondear"><i class="icon-usuario"></i></div></a>
+    	
+    </div>
+<div class="modal fade modal_login margen_modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-sm">
+                      <div class="modal-content">
+                              <form role="form">
+                                  <div class="form-group centrar_login">
+                                    <h5 class="titulo_login">Bienvenido</h5>
+                                    <label for="exampleInputEmail1"></label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Usuario">
+                                  </div>
+                                 <div class="form-group centrar_login">
+                                    <label for="exampleInputPassword1"></label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                 <div class="form-group centrar_login">
+                                    <button type="submit" class="btn btn-danger ">Entrar</button>
+                            </div>
+                            
+                          </form>
+                      </div>
+                     </div>
+                    </div>
+    </header>
+        <div class="fluid_container">
+        <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
+            <div data-thumb="img/slides/thumbs/bridge.jpg" data-src="img/slides/bridge.jpg">
+            </div>
+            <div data-thumb="img/slides/thumbs/leaf.jpg" data-src="img/slides/leaf.jpg">
+            </div>
+            <div data-thumb="img/slides/thumbs/road.jpg" data-src="img/slides/road.jpg">
+            </div>
+            <div data-thumb="img/slides/thumbs/sea.jpg" data-src="img/slides/sea.jpg">
+            </div>
+            <div data-thumb="img/slides/thumbs/shelter.jpg" data-src="img/slides/shelter.jpg">
+            </div>
+            <div data-thumb="img/slides/thumbs/tree.jpg" data-src="img/slides/tree.jpg">
+            </div>
+        </div>
+    </div>
+</body> 
+</html>
